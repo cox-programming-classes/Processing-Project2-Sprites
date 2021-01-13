@@ -16,18 +16,18 @@ You should provide Three Constructors for the Sprite class.
   
 **Position Only**  
 `public Sprite(Vector2 s)` : Provide an initial position, but default Zero velocity.
-
-**Fully Define**
+  
+**Fully Define**  
 `public Sprite(Vector2 s, Vector2 v)` : Provide both initial position and velocity.
-
+  
 ### Bonus Constructors
 Sometimes it is useful to provide multiple easy ways to do the same thing~  Providing additional Constructors for other use cases can make your coding cleaner and easier.  For example, in this class, you may find it useful to have Constructors which take primitive values and then use those to create Vector2 objects internally.  
   
-**Position Only (floats)**
-`public Sprite(float x, float y)` : this will allow you to create a Sprite like this:  `new Sprite(300, 588);` rather than `new Sprite(new Vector2(300, 588));`
+**Position Only (floats)**  
+`public Sprite(float x, float y)` : this will allow you to create a Sprite like this:  `new Sprite(300, 588);` rather than `new Sprite(new Vector2(300, 588));`  
   
-**Fully Define (floats)**
-`public Sprite(float x, float y, float dx, float dy)`
-
-**Copy Constructor**
-`public Sprite(Sprite toCopy)` : Sometimes it is useful to replicate an Object rather than manually set all of its values every time.
+**Fully Define (floats)**  
+`public Sprite(float x, float y, float dx, float dy)`  
+  
+**Copy Constructor**  
+`public Sprite(Sprite toCopy)` : Sometimes it is useful to replicate an Object rather than manually set all of its values every time.  
