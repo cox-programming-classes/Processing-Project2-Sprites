@@ -36,8 +36,9 @@ Sometimes it is useful to provide multiple easy ways to do the same thing~  Prov
 Provide the basic functionality common to all Sprites.  These are the behaviors that *anything* you draw on the screen might need to use.  You will add to this list as we progress, but here are some necessary beginnings.  
   
 `public void moveTo(Vector2 newPosition)` : Set **this** Sprite's position manually.  
-`public void move()` : Change **this** Sprite's position one frame (add the Velocity vector to the Position).
-`public void setVelocity(Vector2 newVelocity)` : Set **this** Sprite's velocity manually.
-`public Vector2 getPosition()` : Get **this** Sprite's current position.
-`public Vector2 getVelocity()` : Get **this** Sprite's current velocity.
+`public void move()` : Change **this** Sprite's position one frame (add the Velocity vector to the Position).  
+`public void setVelocity(Vector2 newVelocity)` : Set **this** Sprite's velocity manually.  
+`public Vector2 getPosition()` : Get **this** Sprite's current position.  
+`public Vector2 getVelocity()` : Get **this** Sprite's current velocity.  
+  
 `public abstract void drawSprite();` : The keyword **abstract** here means that you are declaring that this method *must* be written elsewhere.  You do not write an implementation here, but instead in classes that **extend** Sprite.
